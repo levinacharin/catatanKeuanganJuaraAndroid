@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".pop_up_tambah_kategori">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/lay_PU_TK_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e35046"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_PU_TK_TambahKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tambah Kategori"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_PU_TK_NamaKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Nama Kategori : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay_PU_TK_header" />
+
+    <EditText
+        android:id="@+id/et_PU_TK_NamaKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@id/tv_PU_TK_NamaKategori"
+        app:layout_constraintTop_toBottomOf="@id/tv_PU_TK_NamaKategori" />
+
+    <TextView
+        android:id="@+id/tv_PU_TK_JenisKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Pemasukan"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/et_PU_TK_NamaKategori"
+        app:layout_constraintTop_toBottomOf="@+id/et_PU_TK_NamaKategori" />
+
+    <RadioGroup
+        android:id="@+id/rbg_PU_TK_pilihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_PU_TK_NamaKategori">
+
+        <RadioButton
+            android:id="@+id/rb_PU_TK_pemasukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pemasukan"/>
+
+        <RadioButton
+            android:id="@+id/rb_PU_TK_pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengeluaran" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_PU_TK_batal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="batal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_PU_TK_simpan"
+        app:layout_constraintTop_toBottomOf="@id/rbg_PU_TK_pilihan" />
+
+    <Button
+        android:id="@+id/btn_PU_TK_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="simpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_PU_TK_batal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

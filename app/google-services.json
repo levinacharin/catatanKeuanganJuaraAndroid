@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "983332725526",
+    "project_id": "catatankeuangan-fadcb",
+    "storage_bucket": "catatankeuangan-fadcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983332725526:android:06a7abed1da609d345e637",
+        "android_client_info": {
+          "package_name": "com.example.catatankeuangan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983332725526-p45pom72ug598hdga0mfrf805mmtc0bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl7VV9vi6dck_uPtw1DxqnGO1BkOOF1MM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983332725526-p45pom72ug598hdga0mfrf805mmtc0bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

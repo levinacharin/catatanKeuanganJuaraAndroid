@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tambah_transaksi">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lay_TT_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e35046"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_TT_backtoMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_TT_TambahTransaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tambah Transaksi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn_TT_backtoMain"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_TT_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Tanggal"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay_TT_header" />
+
+    <TextView
+        android:id="@+id/tv_TT_tanggaloutput"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/tv_TT_tanggal"
+        app:layout_constraintTop_toTopOf="@id/tv_TT_tanggal"/>
+
+    <Button
+        android:id="@+id/btn_TT_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="CLICK"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_TT_tanggaloutput"
+        app:layout_constraintStart_toEndOf="@+id/tv_TT_tanggaloutput"
+        app:layout_constraintTop_toTopOf="@+id/tv_TT_tanggaloutput" />
+
+    <TextView
+        android:id="@+id/tv_TT_kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Kategori"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_TT_tanggal"
+        app:layout_constraintTop_toBottomOf="@id/tv_TT_tanggal" />
+
+    <Spinner
+        android:id="@+id/spinner_TT_kategori"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tv_TT_tanggaloutput"
+        app:layout_constraintTop_toTopOf="@id/tv_TT_kategori" />
+
+    <ImageButton
+        android:id="@+id/btn_TT_editKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/spinner_TT_kategori"
+        app:srcCompat="@drawable/edit" />
+
+    <TextView
+        android:id="@+id/tv_TT_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Jumlah"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_TT_kategori"
+        app:layout_constraintTop_toBottomOf="@id/tv_TT_kategori" />
+
+    <EditText
+        android:id="@+id/et_TT_jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@id/spinner_TT_kategori"
+        app:layout_constraintTop_toTopOf="@id/tv_TT_jumlah" />
+
+    <TextView
+        android:id="@+id/tv_TT_keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Keterangan"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tv_TT_jumlah"
+        app:layout_constraintTop_toBottomOf="@id/tv_TT_jumlah" />
+
+    <EditText
+        android:id="@+id/et_TT_keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@id/et_TT_jumlah"
+        app:layout_constraintTop_toTopOf="@id/tv_TT_keterangan" />
+
+    <Button
+        android:id="@+id/btn_TT_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Simpan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_TT_keterangan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
